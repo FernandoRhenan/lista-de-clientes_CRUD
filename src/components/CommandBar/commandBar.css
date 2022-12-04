@@ -1,0 +1,67 @@
+.container-commandBar{
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+
+    background-color: #ffffff;
+    margin: auto;
+    text-align: center;
+    line-height: 30px;
+    max-width: 1000px;
+    min-width: 700px;
+    width: 80%;
+    height: 30px;
+    border: solid 1px;
+    border-bottom: none;
+    font-weight: bold;
+}
+
+.container-commandBar span{
+    border-right: solid 1px;
+}
+
+.bar{
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    line-height: 70px;
+    max-width: 1000px;
+    min-width: 700px;
+    width: 80%;
+    height: 60px;
+    color: #616161;
+    background-color: #ffffff;
+
+    font-size: 30px;
+
+    border: solid 1px;
+    border-bottom: none;
+
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+}
+
+.input-bar{
+    background-color: #f6f6f6;
+    position: relative;
+    bottom: 10px;
+    margin-left: 5px;
+    border: solid 1px ;
+    border-radius: 50px;
+    width: 400px;
+    height: 40px;
+    outline: none;
+
+    padding-left: 10px;
+    font-size: 16px;
+}
+
+.bar span{
+    transition: linear 100ms;
+}
+
+.bar span:hover{
+color: #121829;
+}

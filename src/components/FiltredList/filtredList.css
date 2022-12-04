@@ -1,0 +1,28 @@
+.container-filtredList{
+    margin: auto;
+    max-width: 1000px;
+    min-width: 700px;
+    width: 80%;
+    border: solid 1px;
+    border-bottom: none;
+}
+.container-filtredList li{
+    background-color: #c2ffc1;
+    height: 25px;
+    line-height: 25px;
+    border-bottom: solid 1px;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr;
+    text-align: center;
+}
+
+.container-filtredList li:hover{
+    background-color: #acffab;
+}
+
+
+.container-filtredList li span{
+    border-right: solid 1px;
+    padding:0 5px;
+}

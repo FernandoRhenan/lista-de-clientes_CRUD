@@ -1,0 +1,63 @@
+.container-editDelete{
+    display: flex;
+    position: absolute;
+    top: -200px;
+    background-color: white;
+    border-radius: 28px;
+    box-shadow: 0 0 10px #484848;
+}
+
+.container-editDelete-btn {
+    min-width: 50px;
+    height: 200px;
+    background-color: #ededed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    border-radius: 50px;
+    box-shadow: .5px 0 4px black;
+    /* border: solid 1px grey; */
+}
+
+.container-editDelete-obj{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 200px;
+    color: rgb(75, 75, 75);
+    padding: 0 15px;
+}
+
+.container-editDelete-obj input{
+    display: flex;
+    flex-direction: column;
+}
+
+.container-editDelete-btn span {
+    font-size: 33px;
+    color: rgb(75, 75, 75);
+}
+
+.container-editDelete-btn span:hover {
+    color: black;
+    transition: 200ms;
+}
+
+.container-editDelete-obj input{
+    font-size: 16px;
+    height: 28px;
+    border-radius: 25px;
+    outline: none;
+    border: solid 1px grey;
+    margin-right: 8px;
+    padding-left: 5px;
+}
+
+.check:hover{
+    color: #00a500;
+}
+
+.x:hover{
+    color: red;
+}

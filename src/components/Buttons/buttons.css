@@ -1,0 +1,25 @@
+.buttons {
+    position: relative;
+    left: 2px;
+    top: 25px;
+    max-width: 170px;
+    max-height: 28px;
+    display: flex;
+    gap: 5px;
+}
+
+.buttons button {
+    color: rgb(75, 75, 75);
+    border: solid 1px grey;
+    width: 80px;
+    height: 26px;
+    border-radius: 2px;
+    font-size: 16px;
+    background-color: white;
+}
+
+.buttons button:hover {
+    background-color: white;
+    color: black;
+    border: solid 1px rgb(80, 80, 80);
+}

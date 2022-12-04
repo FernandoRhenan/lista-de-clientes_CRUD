@@ -1,25 +1,45 @@
-import logo from './logo.svg';
-import './App.css';
+import Header from "./components/Header";
+import { ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import List from "./components/List";
+import CommandBar from "./components/CommandBar";
+import { useState } from 'react'
 
 function App() {
+
+  const [signal, setSignal] = useState(false)
+  const [dataFromChosenLi, setDataFromChosenLi] = useState(false)
+  const [random, setRandom] = useState(false);
+
+  const [Az, setAz] = useState(true)
+
+  function screenUp() {
+    setSignal(!signal)
+  }
+  function chosenLi(e ,data){
+    setDataFromChosenLi([e, data])
+  }
+
+  function cleanInput(){
+    setRandom(Math.random()*1000)
+  }
+
+  function AZ(){
+    setAz(true)
+  }
+
+  function ZA(){
+    setAz(false)
+  }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Header text={'Lista de Clientes'} />
+      <CommandBar screenUp={screenUp} chosenLi={chosenLi} random={random} AZ={AZ} ZA={ZA} />
+      <List signal={signal} dataFromChosenLi={dataFromChosenLi} cleanInput={cleanInput} Az={Az} />
+      <ToastContainer autoClose={2000} />
     </div>
-  );
+  )
 }
 
 export default App;
